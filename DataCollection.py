@@ -9,7 +9,7 @@ cap_object = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1) #detects only one hand
 offset = 20
 imgSize = 300
-folder = "Data/C"
+folder = "Data/H"
 counter = 0
 
 while True:

@@ -29,7 +29,7 @@ word_length = 0
 index = 0
 
 
-labels = ["A", "B", "C"]
+labels = ["A", "B", "C", "D", "E", "F", " G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 
 while True:
@@ -66,8 +66,8 @@ while True:
         cv2.rectangle(imgOutput, (x - offset, y - offset-50), (x - offset + 90, y - offset), (255, 0, 255), cv2.FILLED)
         cv2.putText(imgOutput, labels[index], (x, y-27), cv2.FONT_HERSHEY_COMPLEX, 1.7, (255, 255, 255), 2)
         cv2.rectangle(imgOutput, (x-offset, y-offset), (x+w+offset, y+h+offset), (255, 0, 255), 4)
-        #cv2.imshow("imageCrop", imgCrop)
-        #cv2.imshow("imageWhite", imgWhite)
+        cv2.imshow("imageCrop", imgCrop)
+        cv2.imshow("imageWhite", imgWhite)
 
         cv2.putText(imgWhiteText, "Welcome To Sign Language Ditiction...!", (20, 25), font, 0.9, (159, 28, 189), thickness)
         cv2.putText(imgWhiteText, "Instructions:-", (00, 65), font, 0.8, (255,255,0),thickness)
